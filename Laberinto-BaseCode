@@ -2,7 +2,8 @@
 
 emoji:
 
-.word 0x00FFFF00,0x00FF00FF,0x0000FFFF
+.word 0x00EE4B2B,0x0066FF00,0x00A7C7E7,0x00FFFFFF,0x00000000
+#     Red        Green      Blue       White      Black
 
 .text
 
@@ -14,16 +15,150 @@ li a2 LED_MATRIX_0_HEIGHT #25
 
 la a3, emoji
 
-#slli t1,a1,2 #multiply by 4
+lw t1, 12(a3)    #White
+lw t2, 16(a3)    #Black
+lw a6, 4(a3)     #Green
+li t3, 1         #Row = 1
+li a4, 34        # LED Matrix width - 1 = 34
+li a5, 24        #LED Matrix height - 1 = 24
 
-lw t0, 0(a3) #yellow
+#Create the White Background with Black Border
 
-sw t0,144(a0) #pixel 36 and is multiplied by 4 = 144, or the pixel 1,1 indexing from 0,0
+outer_loop:
+    bge t3, a5, done
+    li t4, 1   #starts in col 1 
+    inner_loop:
+        bge t4, a4, next_row
+        #BASE + (row × 140) + (col × 4)
+        
+        mul t5, t3, a1        #Row * width
+        add t5, t5, t4        #Row * width + col
+        slli t5, t5, 2
+        add t5, t5, a0
+        
+        sw t1, 0(t5)
+        
+        addi t4, t4, 1
+        j inner_loop
+        
+        next_row:
+            addi t3,t3,1
+            j outer_loop     
 
-lw t0,4(a3) #magenta
+done:
 
-sw t0,284(a0) #144+35*4
+#Green pixel - End of Game
+sw a6, 984(a0)
 
-lw t0,8(a3) #cyan
 
-sw t0,424(a0) #144+35*4*2
+# Vertical Lines------------------------------- 
+li t3, 2
+li t4, 2
+li a6, 8
+
+vline1:
+    bge t3,a6,vline1_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline1
+    
+vline1_done:
+    nop
+
+li t3, 2
+li t4, 4
+li a6, 7
+
+vline2:
+    bge t3,a6,vline2_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline2
+    
+vline2_done:
+    nop
+
+li t3, 1
+li t4, 6
+li a6, 3
+
+vline3:
+    bge t3,a6,vline3_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline3
+    
+vline3_done:
+    nop
+
+li t3, 1
+li t4, 8
+li a6, 3
+
+vline4:
+    bge t3,a6,vline4_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline4
+    
+vline4_done:
+    nop
+
+li t3, 4
+li t4, 6
+li a6, 13
+
+vline5:
+    bge t3,a6,vline5_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline5
+    
+vline5_done:
+    nop
+
+# Horizontal Lines-------------------------------
+li t3, 8
+li t4, 1
+li a6, 8
+
+hline1:
+    bge t4,a6,hline1_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2,0(t5)
+    addi t4,t4,1
+    j hline1
+
+hline1_done:
+    nop
+
+
