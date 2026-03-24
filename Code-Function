@@ -1,0 +1,643 @@
+.data
+
+emoji:
+.word 0x00EE4B2B,0x0066FF00,0x00A7C7E7,0x00FFFFFF,0x00000000
+#     Red        Green      Blue       White      Black
+
+.text
+
+li a0, LED_MATRIX_0_BASE
+li a1, LED_MATRIX_0_WIDTH
+li a2, LED_MATRIX_0_HEIGHT
+
+la a3, emoji
+
+lw t1, 12(a3)    #White
+lw t2, 16(a3)    #Black
+lw a6, 4(a3)     #Green
+li a4, 34
+li a5, 24
+
+# White Background
+li t3, 1
+outer_loop:
+    bge t3, a5, bg_done
+    li t4, 1
+    inner_loop:
+        bge t4, a4, next_row
+        mul t5, t3, a1
+        add t5, t5, t4
+        slli t5, t5, 2
+        add t5, t5, a0
+        sw t1, 0(t5)
+        addi t4, t4, 1
+        j inner_loop
+    next_row:
+        addi t3, t3, 1
+        j outer_loop
+bg_done:
+
+# Green pixel - End of Game
+sw a6, 984(a0)
+
+# Vertical Lines
+li t3, 2
+li t4, 2
+li a6, 8
+jal ra, vline
+
+li t3, 2
+li t4, 4
+li a6, 7
+jal ra, vline
+
+li t3, 1
+li t4, 6
+li a6, 3
+jal ra, vline
+
+li t3, 1
+li t4, 8
+li a6, 3
+jal ra, vline
+
+li t3, 4
+li t4, 6
+li a6, 13
+jal ra, vline
+
+li t3, 9
+li t4, 4
+li a6, 13
+jal ra, vline
+
+li t3, 10
+li t4, 2
+li a6, 13
+jal ra, vline
+
+li t3, 14
+li t4, 2
+li a6, 17
+jal ra, vline
+
+li t3, 18
+li t4, 2
+li a6, 23
+jal ra, vline
+
+li t3, 16
+li t4, 4
+li a6, 21
+jal ra, vline
+
+li t3, 22
+li t4, 3
+li a6, 24
+jal ra, vline
+
+li t3, 22
+li t4, 5
+li a6, 24
+jal ra, vline
+
+li t3, 22
+li t4, 7
+li a6, 24
+jal ra, vline
+
+li t3, 14
+li t4, 6
+li a6, 19
+jal ra, vline
+
+li t3, 14
+li t4, 9
+li a6, 21
+jal ra, vline
+
+li t3, 17
+li t4, 15
+li a6, 25
+jal ra, vline
+
+li t3, 21
+li t4, 13
+li a6, 24
+jal ra, vline
+
+li t3, 21
+li t4, 11
+li a6, 22
+jal ra, vline
+
+li t3, 10
+li t4, 8
+li a6, 15
+jal ra, vline
+
+li t3, 8
+li t4, 10
+li a6, 13
+jal ra, vline
+
+li t3, 6
+li t4, 9
+li a6, 9
+jal ra, vline
+
+li t3, 14
+li t4, 22
+li a6, 23
+jal ra, vline
+
+li t3, 15
+li t4, 12
+li a6, 19
+jal ra, vline
+
+li t3, 12
+li t4, 14
+li a6, 16
+jal ra, vline
+
+li t3, 6
+li t4, 12
+li a6, 9
+jal ra, vline
+
+li t3, 8
+li t4, 13
+li a6, 11
+jal ra, vline
+
+li t3, 2
+li t4, 14
+li a6, 6
+jal ra, vline
+
+li t3, 3
+li t4, 12
+li a6, 4
+jal ra, vline
+
+li t3, 22
+li t4, 17
+li a6, 24
+jal ra, vline
+
+li t3, 17
+li t4, 17
+li a6, 21
+jal ra, vline
+
+li t3, 17
+li t4, 20
+li a6, 23
+jal ra, vline
+
+li t3, 16
+li t4, 16
+li a6, 18
+jal ra, vline
+
+li t3, 12
+li t4, 12
+li a6, 14
+jal ra, vline
+
+li t3, 9
+li t4, 21
+li a6, 14
+jal ra, vline
+
+li t3, 7
+li t4, 20
+li a6, 10
+jal ra, vline
+
+li t3, 7
+li t4, 16
+li a6, 11
+jal ra, vline
+
+li t3, 5
+li t4, 18
+li a6, 8
+jal ra, vline
+
+li t3, 12
+li t4, 16
+li a6, 14
+jal ra, vline
+
+li t3, 13
+li t4, 17
+li a6, 15
+jal ra, vline
+
+li t3, 12
+li t4, 18
+li a6, 14
+jal ra, vline
+
+li t3, 13
+li t4, 19
+li a6, 16
+jal ra, vline
+
+li t3, 1
+li t4, 17
+li a6, 4
+jal ra, vline
+
+li t3, 1
+li t4, 20
+li a6, 3
+jal ra, vline
+
+li t3, 1
+li t4, 29
+li a6, 3
+jal ra, vline
+
+li t3, 3
+li t4, 15
+li a6, 4
+jal ra, vline
+
+li t3, 5
+li t4, 22
+li a6, 8
+jal ra, vline
+
+li t3, 2
+li t4, 23
+li a6, 6
+jal ra, vline
+
+li t3, 7
+li t4, 23
+li a6, 11
+jal ra, vline
+
+li t3, 10
+li t4, 24
+li a6, 13
+jal ra, vline
+
+li t3, 14
+li t4, 24
+li a6, 19
+jal ra, vline
+
+li t3, 14
+li t4, 26
+li a6, 19
+jal ra, vline
+
+li t3, 13
+li t4, 29
+li a6, 19
+jal ra, vline
+
+li t3, 20
+li t4, 29
+li a6, 25
+jal ra, vline
+
+li t3, 11
+li t4, 31
+li a6, 19
+jal ra, vline
+
+li t3, 20
+li t4, 32
+li a6, 23
+jal ra, vline
+
+li t3, 5
+li t4, 26
+li a6, 8
+jal ra, vline
+
+li t3, 8
+li t4, 25
+li a6, 11
+jal ra, vline
+
+li t3, 2
+li t4, 32
+li a6, 4
+jal ra, vline
+
+li t3, 6
+li t4, 32
+li a6, 9
+jal ra, vline
+
+li t3, 5
+li t4, 30
+li a6, 7
+jal ra, vline
+
+li t3, 5
+li t4, 28
+li a6, 6
+jal ra, vline
+
+li t3, 6
+li t4, 25
+li a6, 7
+jal ra, vline
+
+li t3, 9
+li t4, 26
+li a6, 10
+jal ra, vline
+
+li t3, 16
+li t4, 28
+li a6, 17
+jal ra, vline
+
+li t3, 18
+li t4, 27
+li a6, 19
+jal ra, vline
+
+li t3, 13
+li t4, 30
+li a6, 14
+jal ra, vline
+
+li t3, 18
+li t4, 32
+li a6, 19
+jal ra, vline
+
+li t3, 14
+li t4, 32
+li a6, 15
+jal ra, vline
+
+li t3, 16
+li t4, 33
+li a6, 17
+jal ra, vline
+
+li t3, 12
+li t4, 33
+li a6, 13
+jal ra, vline
+
+li t3, 10
+li t4, 33
+li a6, 11
+jal ra, vline
+
+li t3, 10
+li t4, 29
+li a6, 11
+jal ra, vline
+
+li t3, 2
+li t4, 19
+li a6, 3
+jal ra, vline
+
+li t3, 2
+li t4, 22
+li a6, 3
+jal ra, vline
+
+# Horizontal Lines
+li t3, 8
+li t4, 1
+li a6, 8
+jal ra, hline
+
+li t3, 20
+li t4, 4
+li a6, 10
+jal ra, hline
+
+li t3, 22
+li t4, 7
+li a6, 12
+jal ra, hline
+
+li t3, 19
+li t4, 9
+li a6, 16
+jal ra, hline
+
+li t3, 4
+li t4, 4
+li a6, 13
+jal ra, hline
+
+li t3, 12
+li t4, 2
+li a6, 5
+jal ra, hline
+
+li t3, 14
+li t4, 2
+li a6, 5
+jal ra, hline
+
+li t3, 16
+li t4, 2
+li a6, 5
+jal ra, hline
+
+li t3, 18
+li t4, 6
+li a6, 10
+jal ra, hline
+
+li t3, 12
+li t4, 8
+li a6, 11
+jal ra, hline
+
+li t3, 16
+li t4, 8
+li a6, 10
+jal ra, hline
+
+li t3, 6
+li t4, 9
+li a6, 13
+jal ra, hline
+
+li t3, 2
+li t4, 10
+li a6, 15
+jal ra, hline
+
+li t3, 5
+li t4, 14
+li a6, 20
+jal ra, hline
+
+li t3, 7
+li t4, 15
+li a6, 19
+jal ra, hline
+
+li t3, 10
+li t4, 15
+li a6, 19
+jal ra, hline
+
+li t3, 13
+li t4, 12
+li a6, 15
+jal ra, hline
+
+li t3, 15
+li t4, 11
+li a6, 15
+jal ra, hline
+
+li t3, 10
+li t4, 11
+li a6, 12
+jal ra, hline
+
+li t3, 17
+li t4, 10
+li a6, 11
+jal ra, hline
+
+li t3, 17
+li t4, 13
+li a6, 14
+jal ra, hline
+
+li t3, 4
+li t4, 19
+li a6, 22
+jal ra, hline
+
+li t3, 5
+li t4, 21
+li a6, 24
+jal ra, hline
+
+li t3, 9
+li t4, 18
+li a6, 22
+jal ra, hline
+
+li t3, 14
+li t4, 19
+li a6, 23
+jal ra, hline
+
+li t3, 19
+li t4, 20
+li a6, 25
+jal ra, hline
+
+li t3, 11
+li t4, 20
+li a6, 21
+jal ra, hline
+
+li t3, 17
+li t4, 19
+li a6, 20
+jal ra, hline
+
+li t3, 20
+li t4, 19
+li a6, 20
+jal ra, hline
+
+li t3, 22
+li t4, 19
+li a6, 20
+jal ra, hline
+
+li t3, 2
+li t4, 25
+li a6, 31
+jal ra, hline
+
+li t3, 4
+li t4, 25
+li a6, 33
+jal ra, hline
+
+li t3, 12
+li t4, 24
+li a6, 28
+jal ra, hline
+
+li t3, 14
+li t4, 24
+li a6, 28
+jal ra, hline
+
+li t3, 22
+li t4, 24
+li a6, 31
+jal ra, hline
+
+li t3, 20
+li t4, 26
+li a6, 30
+jal ra, hline
+
+li t3, 20
+li t4, 31
+li a6, 34
+jal ra, hline
+
+li t3, 11
+li t4, 27
+li a6, 32
+jal ra, hline
+
+li t3, 9
+li t4, 28
+li a6, 32
+jal ra, hline
+
+li t3, 7
+li t4, 28
+li a6, 31
+jal ra, hline
+
+j done
+
+# Reusable Routines
+vline:
+    bge t3, a6, vline_ret
+    mul t5, t3, a1
+    add t5, t5, t4
+    slli t5, t5, 2
+    add t5, t5, a0
+    sw t2, 0(t5)
+    addi t3, t3, 1
+    j vline
+vline_ret:
+    jalr zero, ra, 0
+
+hline:
+    bge t4, a6, hline_ret
+    mul t5, t3, a1
+    add t5, t5, t4
+    slli t5, t5, 2
+    add t5, t5, a0
+    sw t2, 0(t5)
+    addi t4, t4, 1
+    j hline
+hline_ret:
+    jalr zero, ra, 0
+
+done:
+    nop

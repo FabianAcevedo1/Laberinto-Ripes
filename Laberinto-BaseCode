@@ -141,7 +141,1194 @@ vline5:
     
 vline5_done:
     nop
+li t3, 9
+li t4, 4
+li a6, 13
 
+vline6:
+    bge t3,a6,vline6_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline6
+    
+vline6_done:
+    nop
+li t3, 10
+li t4, 2
+li a6, 13
+
+vline7:
+    bge t3,a6,vline7_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline7
+    
+vline7_done:
+    nop
+li t3, 14
+li t4, 2
+li a6, 17
+
+vline8:
+    bge t3,a6,vline8_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline8
+    
+vline8_done:
+    nop
+li t3, 18
+li t4, 2
+li a6, 23
+
+vline9:
+    bge t3,a6,vline9_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline9
+    
+vline9_done:
+    nop
+
+li t3, 16
+li t4, 4
+li a6, 21
+
+vline10:
+    bge t3,a6,vline10_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline10
+    
+vline10_done:
+    nop
+
+li t3, 22
+li t4, 3
+li a6, 24
+
+vline11:
+    bge t3,a6,vline11_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline11
+    
+vline11_done:
+    nop
+
+li t3, 22
+li t4, 5
+li a6, 24
+
+vline12:
+    bge t3,a6,vline12_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline12
+    
+vline12_done:
+    nop
+
+li t3, 22
+li t4, 7
+li a6, 24
+
+vline13:
+    bge t3,a6,vline13_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline13
+    
+vline13_done:
+    nop
+
+li t3, 14
+li t4, 6
+li a6, 19
+
+vline14:
+    bge t3,a6,vline14_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline14
+    
+vline14_done:
+    nop
+li t3, 14
+li t4, 9
+li a6, 21
+
+vline15:
+    bge t3,a6,vline15_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline15
+    
+vline15_done:
+    nop
+    
+li t3, 17
+li t4, 15
+li a6, 25
+
+vline16:
+    bge t3,a6,vline16_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline16
+    
+vline16_done:
+    nop
+li t3, 21
+li t4, 13
+li a6, 24
+
+vline17:
+    bge t3,a6,vline17_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline17
+    
+vline17_done:
+    nop
+
+li t3, 21
+li t4, 11
+li a6, 22
+
+vline18:
+    bge t3,a6,vline18_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline18
+    
+vline18_done:
+    nop
+
+li t3, 10
+li t4, 8
+li a6, 15
+
+vline19:
+    bge t3,a6,vline19_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline19
+    
+vline19_done:
+    nop
+
+li t3, 8
+li t4, 10
+li a6, 13
+
+vline20:
+    bge t3,a6,vline20_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline20
+    
+vline20_done:
+    nop
+li t3, 6
+li t4, 9
+li a6, 9
+
+vline21:
+    bge t3,a6,vline21_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline21
+    
+vline21_done:
+    nop
+li t3, 14
+li t4, 22
+li a6, 23
+
+vline22:
+    bge t3,a6,vline22_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline22
+    
+vline22_done:
+    nop
+li t3, 15
+li t4, 12
+li a6, 19
+
+vline23:
+    bge t3,a6,vline23_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline23
+    
+vline23_done:
+    nop
+li t3, 12
+li t4, 14
+li a6, 16
+
+vline24:
+    bge t3,a6,vline24_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline24
+    
+vline24_done:
+    nop
+
+li t3, 6
+li t4, 12
+li a6, 9
+
+vline26:
+    bge t3,a6,vline26_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline26
+    
+vline26_done:
+    nop
+li t3, 8
+li t4, 13
+li a6, 11
+
+vline27:
+    bge t3,a6,vline27_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline27
+    
+vline27_done:
+    nop
+
+li t3, 2
+li t4, 14
+li a6, 6
+
+vline28:
+    bge t3,a6,vline28_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline28
+    
+vline28_done:
+    nop
+
+li t3, 3
+li t4, 12
+li a6, 4
+
+vline29:
+    bge t3,a6,vline29_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline29
+    
+vline29_done:
+    nop
+li t3, 22
+li t4, 17
+li a6, 24
+
+vline30:
+    bge t3,a6,vline30_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline30
+    
+vline30_done:
+    nop
+li t3, 17
+li t4, 17
+li a6, 21
+
+vline31:
+    bge t3,a6,vline31_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline31
+    
+vline31_done:
+    nop
+
+li t3, 17
+li t4, 20
+li a6, 23
+
+vline32:
+    bge t3,a6,vline32_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline32
+    
+vline32_done:
+    nop
+li t3, 16
+li t4, 16
+li a6, 18
+
+vline33:
+    bge t3,a6,vline33_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline33
+    
+vline33_done:
+    nop
+li t3, 12
+li t4, 12
+li a6, 14
+
+vline34:
+    bge t3,a6,vline34_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline34
+    
+vline34_done:
+    nop
+li t3, 9
+li t4, 21
+li a6, 14
+
+vline35:
+    bge t3,a6,vline35_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline35
+    
+vline35_done:
+    nop
+li t3, 7
+li t4, 20
+li a6, 10
+
+vline36:
+    bge t3,a6,vline36_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline36
+    
+vline36_done:
+    nop
+li t3, 7
+li t4, 16
+li a6, 11
+
+vline37:
+    bge t3,a6,vline37_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline37
+    
+vline37_done:
+    nop
+li t3, 5
+li t4, 18
+li a6, 8
+
+vline38:
+    bge t3,a6,vline38_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline38
+    
+vline38_done:
+    nop
+
+li t3, 12
+li t4, 16
+li a6, 14
+
+vline39:
+    bge t3,a6,vline39_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline39
+    
+vline39_done:
+    nop
+
+li t3, 13
+li t4, 17
+li a6, 15
+
+vline40:
+    bge t3,a6,vline40_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline40
+    
+vline40_done:
+    nop
+
+li t3, 12
+li t4, 18
+li a6, 14
+
+vline41:
+    bge t3,a6,vline41_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline41
+    
+vline41_done:
+    nop
+li t3, 13
+li t4, 19
+li a6, 16
+
+vline42:
+    bge t3,a6,vline42_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline42
+    
+vline42_done:
+    nop
+
+li t3, 1
+li t4, 17
+li a6, 4
+
+vline43:
+    bge t3,a6,vline43_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline43
+    
+vline43_done:
+    nop
+li t3, 1
+li t4, 20
+li a6, 3
+
+vline44:
+    bge t3,a6,vline44_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline44
+    
+vline44_done:
+    nop
+li t3, 1
+li t4, 29
+li a6, 3
+
+vline45:
+    bge t3,a6,vline45_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline45
+    
+vline45_done:
+    nop
+
+li t3, 3
+li t4, 15
+li a6, 4
+
+vline46:
+    bge t3,a6,vline46_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline46
+    
+vline46_done:
+    nop
+
+li t3, 5
+li t4, 22
+li a6, 8
+
+vline47:
+    bge t3,a6,vline47_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline47
+    
+vline47_done:
+    nop
+li t3, 2
+li t4, 23
+li a6, 6
+
+vline48:
+    bge t3,a6,vline48_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline48
+    
+vline48_done:
+    nop
+li t3, 7
+li t4, 23
+li a6, 11
+
+vline49:
+    bge t3,a6,vline49_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline49
+    
+vline49_done:
+    nop
+li t3, 10
+li t4, 24
+li a6, 13
+
+vline50:
+    bge t3,a6,vline50_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline50
+    
+vline50_done:
+    nop
+li t3, 14
+li t4, 24
+li a6, 19
+
+vline51:
+    bge t3,a6,vline51_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline51
+    
+vline51_done:
+    nop
+li t3, 14
+li t4, 26
+li a6, 19
+
+vline52:
+    bge t3,a6,vline52_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline52
+    
+vline52_done:
+    nop
+li t3, 13
+li t4, 29
+li a6, 19
+
+vline53:
+    bge t3,a6,vline53_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline53
+    
+vline53_done:
+    nop
+li t3,20
+li t4,29
+li a6,25
+vline54:
+    bge t3,a6,vline54_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline54
+    
+vline54_done:
+    nop
+
+li t3,11
+li t4,31
+li a6,19
+vline55:
+    bge t3,a6,vline55_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline55
+    
+vline55_done:
+    nop
+li t3,20
+li t4,32
+li a6,23
+vline56:
+    bge t3,a6,vline56_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline56
+    
+vline56_done:
+    nop
+
+li t3,5
+li t4,26
+li a6,8
+vline57:
+    bge t3,a6,vline57_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline57
+    
+vline57_done:
+    nop
+li t3,8
+li t4,25
+li a6,11
+vline58:
+    bge t3,a6,vline58_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline58
+    
+vline58_done:
+    nop
+li t3,2
+li t4,32
+li a6,4
+vline59:
+    bge t3,a6,vline59_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline59
+    
+vline59_done:
+    nop
+li t3,6
+li t4,32
+li a6,9
+vline60:
+    bge t3,a6,vline60_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline60
+    
+vline60_done:
+    nop
+li t3,5
+li t4,30
+li a6,7
+
+vline61:
+    bge t3,a6,vline61_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline61
+    
+vline61_done:
+    nop
+li t3,5
+li t4,28
+li a6,6
+
+vline62:
+    bge t3,a6,vline62_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline62
+    
+vline62_done:
+    nop
+li t3,6
+li t4,25
+li a6,7
+
+vline63:
+    bge t3,a6,vline63_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline63
+    
+vline63_done:
+    nop
+li t3,9
+li t4,26
+li a6,10
+
+vline64:
+    bge t3,a6,vline64_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline64
+    
+vline64_done:
+    nop
+li t3,16
+li t4,28
+li a6,17
+
+vline65:
+    bge t3,a6,vline65_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline65
+    
+vline65_done:
+    nop
+li t3,18
+li t4,27
+li a6,19
+
+vline66:
+    bge t3,a6,vline66_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline66
+    
+vline66_done:
+    nop
+li t3,13
+li t4,30
+li a6,14
+
+vline67:
+    bge t3,a6,vline67_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline67
+    
+vline67_done:
+    nop
+li t3,18
+li t4,32
+li a6,19
+    
+vline68:
+    bge t3,a6,vline68_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline68
+    
+vline68_done:
+    nop
+li t3,14
+li t4,32
+li a6,15
+    
+vline69:
+    bge t3,a6,vline69_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline69
+    
+vline69_done:
+    nop
+li t3,16
+li t4,33
+li a6,17
+    
+vline70:
+    bge t3,a6,vline70_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline70
+    
+vline70_done:
+    nop
+li t3,12
+li t4,33
+li a6,13
+    
+vline71:
+    bge t3,a6,vline71_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline71
+    
+vline71_done:
+    nop
+li t3,10
+li t4,33
+li a6,11
+    
+vline72:
+    bge t3,a6,vline72_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline72
+    
+vline72_done:
+    nop
+li t3,10
+li t4,29
+li a6,11
+    
+vline73:
+    bge t3,a6,vline73_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline73
+    
+vline73_done:
+    nop
+li t3,2
+li t4,19
+li a6,3
+    
+vline74:
+    bge t3,a6,vline74_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline74
+    
+vline74_done:
+    nop
+li t3,2
+li t4,22
+li a6,3
+    
+vline75:
+    bge t3,a6,vline75_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2, 0(t5)
+    addi t3,t3,1
+    j vline75
+    
+vline75_done:
+    nop
+    
 # Horizontal Lines-------------------------------
 li t3, 8
 li t4, 1
@@ -161,4 +1348,685 @@ hline1:
 hline1_done:
     nop
 
+li t3, 20
+li t4, 4
+li a6, 10
 
+hline2:
+    bge t4,a6,hline2_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2,0(t5)
+    addi t4,t4,1
+    j hline2
+
+hline2_done:
+    nop
+
+li t3, 22
+li t4, 7
+li a6, 12
+
+hline3:
+    bge t4,a6,hline3_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2,0(t5)
+    addi t4,t4,1
+    j hline3
+
+hline3_done:
+    nop
+    
+li t3, 19
+li t4, 9
+li a6, 16
+
+hline4:
+    bge t4,a6,hline4_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2,0(t5)
+    addi t4,t4,1
+    j hline4
+
+hline4_done:
+    nop
+
+li t3, 4
+li t4, 4
+li a6, 13
+
+hline5:
+    bge t4,a6,hline5_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2,0(t5)
+    addi t4,t4,1
+    j hline5
+
+hline5_done:
+    nop
+
+li t3, 12
+li t4, 2
+li a6, 5
+
+hline6:
+    bge t4,a6,hline6_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2,0(t5)
+    addi t4,t4,1
+    j hline6
+
+hline6_done:
+    nop
+
+li t3, 14
+li t4, 2
+li a6, 5
+
+hline7:
+    bge t4,a6,hline7_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2,0(t5)
+    addi t4,t4,1
+    j hline7
+
+hline7_done:
+    nop
+    
+li t3, 16
+li t4, 2
+li a6, 5
+
+hline8:
+    bge t4,a6,hline8_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2,0(t5)
+    addi t4,t4,1
+    j hline8
+
+hline8_done:
+    nop
+
+li t3, 18
+li t4, 6
+li a6, 10
+
+hline9:
+    bge t4,a6,hline9_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2,0(t5)
+    addi t4,t4,1
+    j hline9
+
+hline9_done:
+
+li t3, 12
+li t4, 8
+li a6, 11
+
+hline10:
+    bge t4,a6,hline10_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2,0(t5)
+    addi t4,t4,1
+    j hline10
+
+hline10_done:
+
+li t3, 16
+li t4, 8
+li a6, 10
+
+hline11:
+    bge t4,a6,hline11_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2,0(t5)
+    addi t4,t4,1
+    j hline11
+
+hline11_done:
+
+li t3, 6
+li t4, 9
+li a6, 13
+
+hline12:
+    bge t4,a6,hline12_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2,0(t5)
+    addi t4,t4,1
+    j hline12
+
+hline12_done:
+    nop
+
+li t3, 2
+li t4, 10
+li a6, 15
+
+hline13:
+    bge t4,a6,hline13_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2,0(t5)
+    addi t4,t4,1
+    j hline13
+
+hline13_done:
+    nop
+
+li t3, 5
+li t4, 14
+li a6, 20
+
+hline14:
+    bge t4,a6,hline14_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2,0(t5)
+    addi t4,t4,1
+    j hline14
+
+hline14_done:
+    nop
+li t3, 7
+li t4, 15
+li a6, 19
+
+hline15:
+    bge t4,a6,hline15_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2,0(t5)
+    addi t4,t4,1
+    j hline15
+
+hline15_done:
+    nop
+li t3, 10
+li t4, 15
+li a6, 19
+
+hline16:
+    bge t4,a6,hline16_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2,0(t5)
+    addi t4,t4,1
+    j hline16
+
+hline16_done:
+    nop
+
+li t3, 13
+li t4, 12
+li a6, 15
+
+hline17:
+    bge t4,a6,hline17_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2,0(t5)
+    addi t4,t4,1
+    j hline17
+
+hline17_done:
+    nop
+li t3, 15
+li t4, 11
+li a6, 15
+
+hline18:
+    bge t4,a6,hline18_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2,0(t5)
+    addi t4,t4,1
+    j hline18
+
+hline18_done:
+    nop
+
+li t3, 10
+li t4, 11
+li a6, 12
+
+hline19:
+    bge t4,a6,hline19_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2,0(t5)
+    addi t4,t4,1
+    j hline19
+
+hline19_done:
+    nop
+li t3, 17
+li t4, 10
+li a6, 11
+
+hline20:
+    bge t4,a6,hline20_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2,0(t5)
+    addi t4,t4,1
+    j hline20
+
+hline20_done:
+    nop
+li t3, 17
+li t4, 13
+li a6, 14
+
+hline21:
+    bge t4,a6,hline21_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2,0(t5)
+    addi t4,t4,1
+    j hline21
+
+hline21_done:
+    nop
+li t3, 4
+li t4, 19
+li a6, 22
+
+hline22:
+    bge t4,a6,hline22_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2,0(t5)
+    addi t4,t4,1
+    j hline22
+
+hline22_done:
+    nop
+li t3, 5
+li t4, 21
+li a6, 24
+
+hline23:
+    bge t4,a6,hline23_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2,0(t5)
+    addi t4,t4,1
+    j hline23
+
+hline23_done:
+    nop
+li t3, 9
+li t4, 18
+li a6, 22
+
+hline24:
+    bge t4,a6,hline24_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2,0(t5)
+    addi t4,t4,1
+    j hline24
+
+hline24_done:
+    nop
+
+li t3, 14
+li t4, 19
+li a6, 23
+
+hline25:
+    bge t4,a6,hline25_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2,0(t5)
+    addi t4,t4,1
+    j hline25
+
+hline25_done:
+    nop
+
+li t3, 19
+li t4, 20
+li a6, 25
+
+hline26:
+    bge t4,a6,hline26_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2,0(t5)
+    addi t4,t4,1
+    j hline26
+
+hline26_done:
+    nop
+
+li t3, 11
+li t4, 20
+li a6, 21
+
+hline27:
+    bge t4,a6,hline27_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2,0(t5)
+    addi t4,t4,1
+    j hline27
+
+hline27_done:
+    nop
+
+li t3, 17
+li t4, 19
+li a6, 20
+
+hline28:
+    bge t4,a6,hline28_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2,0(t5)
+    addi t4,t4,1
+    j hline28
+
+hline28_done:
+    nop
+
+li t3, 20
+li t4, 19
+li a6, 20
+
+hline29:
+    bge t4,a6,hline29_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2,0(t5)
+    addi t4,t4,1
+    j hline29
+
+hline29_done:
+    nop
+
+li t3, 22
+li t4, 19
+li a6, 20
+
+hline30:
+    bge t4,a6,hline30_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2,0(t5)
+    addi t4,t4,1
+    j hline30
+
+hline30_done:
+    nop
+
+li t3, 2
+li t4, 25
+li a6, 31
+
+hline31:
+    bge t4,a6,hline31_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2,0(t5)
+    addi t4,t4,1
+    j hline31
+
+hline31_done:
+    nop
+
+li t3, 4
+li t4, 25
+li a6, 33
+
+hline32:
+    bge t4,a6,hline32_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2,0(t5)
+    addi t4,t4,1
+    j hline32
+
+hline32_done:
+    nop
+li t3, 12
+li t4, 24
+li a6, 28
+
+hline33:
+    bge t4,a6,hline33_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2,0(t5)
+    addi t4,t4,1
+    j hline33
+
+hline33_done:
+    nop
+li t3, 14
+li t4, 24
+li a6, 28
+
+hline34:
+    bge t4,a6,hline34_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2,0(t5)
+    addi t4,t4,1
+    j hline34
+
+hline34_done:
+    nop
+li t3, 22
+li t4, 24
+li a6, 31
+
+hline35:
+    bge t4,a6,hline35_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2,0(t5)
+    addi t4,t4,1
+    j hline35
+
+hline35_done:
+    nop
+li t3, 20
+li t4, 26
+li a6, 30
+
+hline36:
+    bge t4,a6,hline36_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2,0(t5)
+    addi t4,t4,1
+    j hline36
+
+hline36_done:
+    nop
+li t3, 20
+li t4, 31
+li a6, 34
+
+hline37:
+    bge t4,a6,hline37_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2,0(t5)
+    addi t4,t4,1
+    j hline37
+
+hline37_done:
+    nop
+li t3, 11
+li t4, 27
+li a6, 32
+
+hline38:
+    bge t4,a6,hline38_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2,0(t5)
+    addi t4,t4,1
+    j hline38
+
+hline38_done:
+    nop
+li t3, 9
+li t4, 28
+li a6, 32
+
+hline39:
+    bge t4,a6,hline39_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2,0(t5)
+    addi t4,t4,1
+    j hline39
+
+hline39_done:
+    nop
+li t3, 7
+li t4, 28
+li a6, 31
+
+hline40:
+    bge t4,a6,hline40_done
+    mul t5,t3,a1
+    add t5,t5,t4
+    slli t5,t5,2
+    add t5,t5,a0
+    
+    sw t2,0(t5)
+    addi t4,t4,1
+    j hline40
+
+hline40_done:
+    nop
